@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="EjercicioFicherosTextoAlumnos" />
+        <module name="HibernateALumnosNotas" />
         <module name="EjerciciosJsonMotos" />
         <module name="CochesJSON" />
         <module name="BaseDatosMotos" />

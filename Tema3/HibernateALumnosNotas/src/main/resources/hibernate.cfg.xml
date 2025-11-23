@@ -4,12 +4,12 @@
         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <session-factory>
+    <session-factory> // saberse esto 
         <!-- Conexión a la base de datos -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateUAX</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:8889/hibernateUAX</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.password">root</property>
 
         <!-- Dialecto de MySQL -->
         <!-- MySQLDialect es para indicarle cómo se tiene que comunicar con MySQl-->
