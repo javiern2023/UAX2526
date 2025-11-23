@@ -25,7 +25,20 @@ public class GestionBD {
     // Inicialización estática para determinar la ruta del archivo
     static {
         String directorioProyecto = System.getProperty("user.dir");
-        RUTA_ARCHIVO_JSON = directorioProyecto + "/src/main/resources/" + NOMBRE_ARCHIVO_JSON;
+        // Verificar si estamos en el directorio raíz o en el módulo
+        String rutaBase = directorioProyecto + "/src/main/resources/" + NOMBRE_ARCHIVO_JSON;
+        File archivo = new File(rutaBase);
+
+        // Si no existe la ruta directa, probamos con la ruta del módulo Reto1
+        if (!archivo.getParentFile().exists()) {
+            String rutaModulo = directorioProyecto + "/Reto1/src/main/resources/" + NOMBRE_ARCHIVO_JSON;
+            File archivoModulo = new File(rutaModulo);
+            if (archivoModulo.getParentFile().exists()) {
+                rutaBase = rutaModulo;
+            }
+        }
+
+        RUTA_ARCHIVO_JSON = rutaBase;
     }
 
     // Constructor - Inicializa Gson
@@ -293,6 +306,11 @@ public class GestionBD {
         String sql = "SELECT COUNT(*) AS total FROM ventas";
 
         Connection conn = ConexionBD.conectar();
+
+        if (conn == null) {
+            System.err.println("No se pudo conectar a la base de datos para obtener ventas.");
+            return 0;
+        }
 
         try (Statement stmt = conn.createStatement();
                 ResultSet rs = stmt.executeQuery(sql)) {
