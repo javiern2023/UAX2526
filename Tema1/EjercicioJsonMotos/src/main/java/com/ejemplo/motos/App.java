@@ -38,6 +38,8 @@ public class App {
             }
 
         } while (opcion != 0);
+        
+        sc.close(); // ✅ Cerramos el Scanner para liberar recursos
     }
 }
 

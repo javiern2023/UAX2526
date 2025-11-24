@@ -17,19 +17,15 @@ import com.basedatos.database.GestionBD;
 public class
 App {
     public static void main(String[] args) {
-        // 1) Creamos un objeto gestor encargado de acceder a la base de datos
-        //    Este objeto no mantiene conexiones abiertas; solo organiza las operaciones JDBC.
-        GestionBD gestor = new GestionBD();
-
-        // 2) Aseguramos que las tablas 'alumnos' y 'notas' existan.
+        // 1) Aseguramos que las tablas 'alumnos' y 'notas' existan.
         //    Si no existen, se crean automáticamente mediante DDL.
         //    Esto permite ejecutar la app en una BD vacía sin errores.
         GestionBD.crearTablasSiNoExisten();
 
-        // 3) Creamos el controlador principal, encargado del menú y la lógica de interacción.
+        // 2) Creamos el controlador principal, encargado del menú y la lógica de interacción.
         AppController app = new AppController();
 
-        // 4) Lanzamos el menú que permitirá:
+        // 3) Lanzamos el menú que permitirá:
         //      - dar de alta/baja alumnos
         //      - insertar/modificar notas
         //      - consultar notas individuales o todas
