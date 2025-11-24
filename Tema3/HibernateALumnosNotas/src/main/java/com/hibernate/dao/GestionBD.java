@@ -23,7 +23,7 @@ public class GestionBD {
     // Alta alumno
     public void altaAlumno(Alumno a) {
         Transaction tx = null; //
-        try (Session session = HibernateUtil.getSf().openSession()) {
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             tx = session.beginTransaction(); //Indica que todo lo que se haga es parte de la misma operación
             session.persist(a); //Hibernate convierte el objeto Alumno en un insert SQL
             tx.commit(); //Confirmamos el cambio si el alumno se guardó realmente
@@ -37,7 +37,7 @@ public class GestionBD {
     // Baja alumno
     public void bajaAlumno(String expediente) {
         Transaction tx = null;
-        try (Session session = HibernateUtil.getSf().openSession()) {
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             tx = session.beginTransaction();
             Alumno a = session.get(Alumno.class, expediente);// de la lclase alumno extraemos la columna expediente
             if (a != null) session.remove(a);// borrado
@@ -52,7 +52,7 @@ public class GestionBD {
     // Insertar nota
     public void insertarNota(Alumno a, double valorNota) {
         Transaction tx = null;
-        try (Session session = HibernateUtil.getSf().openSession()) {
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             tx = session.beginTransaction();
             Nota n = new Nota();
             n.setAlumno(a);
@@ -68,7 +68,7 @@ public class GestionBD {
 
     // Consultar todas las notas
     public List<Nota> consultarTodasNotas() {
-        try (Session session = HibernateUtil.getSf().openSession()) {
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             //Devuelve todos los objetos de tipo nota y los guarda en la lista.
             return session.createQuery("from Nota", Nota.class).list(); //HQL
         }

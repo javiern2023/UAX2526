@@ -4,7 +4,7 @@ import com.basedatos.model.Moto;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import com.basedatos.database.ConexionBD;
+
 
 
 /**

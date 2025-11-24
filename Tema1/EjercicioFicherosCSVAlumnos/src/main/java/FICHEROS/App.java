@@ -108,5 +108,6 @@ public class App {
             }
 
         } while (opcion != 7);
+        sc.close();
     }
 }

@@ -27,7 +27,7 @@ public class FicheroBinario {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Error al inicializar el fichero: " + e.getMessage());
         }
     }
 
@@ -39,7 +39,7 @@ public class FicheroBinario {
             oos.flush();
             System.out.println("Coches guardados correctamente.");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Error al escribir coches: " + e.getMessage());
         }
     }
 
@@ -52,7 +52,7 @@ public class FicheroBinario {
             ObjectInputStream ois = new ObjectInputStream(bis);
             coches = (List<Coche>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
+            System.err.println("Error al leer coches: " + e.getMessage());
         }
         return coches;
     }

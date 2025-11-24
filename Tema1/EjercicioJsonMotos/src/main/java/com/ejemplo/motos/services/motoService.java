@@ -6,7 +6,7 @@ import java.util.Scanner;
 import com.ejemplo.motos.io.JsonService;
 
 
-import java.util.Scanner;
+
 
 public class motoService {
 

@@ -21,10 +21,11 @@ public class binarioService {
             System.out.println("Motos guardadas en el fichero binario");
         }
         catch(IOException e){
-            e.printStackTrace();
+            System.err.println("Error al guardar motos en binario: " + e.getMessage());
         }
     }
 
+    @SuppressWarnings("unchecked")
     public List<moto> leerBinario(){
         List<moto> motos = new ArrayList<>();
         try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath))){

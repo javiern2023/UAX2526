@@ -24,7 +24,7 @@ App {
         // 2) Aseguramos que las tablas 'alumnos' y 'notas' existan.
         //    Si no existen, se crean automáticamente mediante DDL.
         //    Esto permite ejecutar la app en una BD vacía sin errores.
-        gestor.crearTablasSiNoExisten();
+        GestionBD.crearTablasSiNoExisten();
 
         // 3) Creamos el controlador principal, encargado del menú y la lógica de interacción.
         AppController app = new AppController();

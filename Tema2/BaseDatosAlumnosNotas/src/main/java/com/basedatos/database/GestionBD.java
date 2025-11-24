@@ -11,7 +11,7 @@ package com.basedatos.database;
 /* ====== IMPORTS: Traemos clases JDBC y nuestro modelo ====== */
 import com.basedatos.model.Alumno; // 🧩 POJO del dominio que representa a un alumno
 import java.sql.*;               // 🔌 JDBC: Connection, Statement, PreparedStatement, ResultSet, SQLException...
-import java.util.ArrayList;      // 📦 (Opcional) Estructuras de apoyo si fuesen necesarias
+      // 📦 (Opcional) Estructuras de apoyo si fuesen necesarias
 
 /**
  * Clase de servicio de base de datos.

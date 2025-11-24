@@ -9,8 +9,7 @@ import com.uax.concesionario.model.VentaCoche;
 
 import java.io.*;
 import java.lang.reflect.Type;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -104,7 +103,6 @@ public class GestionBD {
             gson.toJson(coches, writer);
         } catch (IOException e) {
             System.err.println("Error al guardar coches: " + e.getMessage());
-            e.printStackTrace();
         }
     }
 
@@ -197,7 +195,6 @@ public class GestionBD {
 
         } catch (SQLException e) {
             System.err.println("Error al insertar venta: " + e.getMessage());
-            e.printStackTrace();
         } finally {
             ConexionBD.desconectar(conn);
         }
@@ -244,7 +241,6 @@ public class GestionBD {
 
         } catch (SQLException e) {
             System.err.println("Error al leer ventas: " + e.getMessage());
-            e.printStackTrace();
         } finally {
             ConexionBD.desconectar(conn);
         }
@@ -292,7 +288,6 @@ public class GestionBD {
 
         } catch (SQLException e) {
             System.err.println("Error al leer ventas por cliente: " + e.getMessage());
-            e.printStackTrace();
         } finally {
             ConexionBD.desconectar(conn);
         }

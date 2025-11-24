@@ -1,6 +1,6 @@
 package com.hibernate.dao;
 
-import com.hibernate.model.*;
+
 import lombok.Getter;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 public class HibernateUtil {
 
     @Getter
-    private static final SessionFactory Sf = bsFactory();
+    private static final SessionFactory sessionFactory = bsFactory();
     // un único objeto por sesión. sessionFactory sólo lo generamos una
     // vez.
 
@@ -27,6 +27,6 @@ public class HibernateUtil {
     }
 
     public static void shutdown() {
-        getSf().close();
+        getSessionFactory().close();
     }
 }
