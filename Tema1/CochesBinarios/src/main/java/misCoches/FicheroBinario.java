@@ -43,6 +43,7 @@ public class FicheroBinario {
         }
     }
 
+    @SuppressWarnings("unchecked")
     public List<Coche> leerCoches() {
         List<Coche> coches = new ArrayList<>();
         File file = new File(nombreFichero);

@@ -1,9 +1,0 @@
-com/uax/concesionario/database/GestionBD.class
-com/uax/concesionario/model/Cliente.class
-com/uax/concesionario/controller/ConcesionarioController.class
-com/uax/concesionario/model/Coche.class
-com/uax/concesionario/database/GestionBD$1.class
-com/uax/concesionario/App.class
-com/uax/concesionario/database/ConexionBD.class
-com/uax/concesionario/database/GestionBD$2.class
-com/uax/concesionario/model/VentaCoche.class
