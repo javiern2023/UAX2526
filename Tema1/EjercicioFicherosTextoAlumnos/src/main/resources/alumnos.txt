@@ -1,0 +1,2 @@
+123;Javier;Navazo;6.0
+234;Ainhoa;Criado;9.0

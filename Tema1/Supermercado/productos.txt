@@ -1,0 +1,4 @@
+Nombre: Leche
+Precio: 3
+Cantidad: 2
+--------------------

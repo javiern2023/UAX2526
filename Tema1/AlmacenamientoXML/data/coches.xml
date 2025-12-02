@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<coches>
+    <coche>
+        <marca>Volvo</marca>
+        <modelo>xc70</modelo>
+        <precio>567.0</precio>
+        <tipo>Ranchera</tipo>
+    </coche>
+</coches>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alumnos>
+    <alumno>
+        <expediente>123</expediente>
+        <nombre>Javier</nombre>
+        <apellidos>Navazo</apellidos>
+        <notas/>
+    </alumno>
+    <alumno>
+        <expediente>345</expediente>
+        <nombre>Izan</nombre>
+        <apellidos>Fernandez</apellidos>
+        <notas/>
+    </alumno>
+</alumnos>
