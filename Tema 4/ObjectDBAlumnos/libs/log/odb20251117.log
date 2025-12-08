@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2025-11-17 14:15:37 #1 store] 
+Database 'C:\Users\yo\UAX2526\Tema 4\ObjectDBAlumnos\db\alumnos.odb' is opened by 18328@LAPTOP-1VVLPE3E
+
+[2025-11-17 14:15:37 #2 store] 
+Configuration path: ?
+
+[2025-11-17 14:15:37 #3 type] 
+Type com.ejemplo.alumnos.model.Alumno is not enhanced.
+
+[2025-11-17 14:15:37 #4 store] 
+Database 'C:\Users\yo\UAX2526\Tema 4\ObjectDBAlumnos\db\alumnos.odb' is closed by 18328@LAPTOP-1VVLPE3E
+

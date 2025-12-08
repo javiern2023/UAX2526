@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Tema1/EjercicioJSONAlumnos/EjercicioJSONAlumnos.iml" filepath="$PROJECT_DIR$/Tema1/EjercicioJSONAlumnos/EjercicioJSONAlumnos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/UAX2526.iml" filepath="$PROJECT_DIR$/.idea/UAX2526.iml" />
     </modules>
   </component>

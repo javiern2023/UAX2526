@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <!-- xmlns: indica el espacio de nombres XML para JPA. -->
+    <!-- xsi:schemaLocation: define dónde se encuentra el esquema XSD para validar este XML. -->
+    <!-- version="2.1": indica que usas la versión 2.1 de JPA. -->
+    <persistence-unit name="objectdb-motos" transaction-type="RESOURCE_LOCAL">
+        <provider>com.objectdb.jpa.Provider</provider>
+
+        <class>com.ejemplo.motos.model.Moto</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="$objectdb/db/concesionario.odb"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
+
+
+
+
+
